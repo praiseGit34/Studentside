@@ -18,6 +18,9 @@ body, html {
   display: flex;
   flex-direction: column;
 }
+h2{
+  color: darkcyan;
+}
 
 .sidebar-header {
   display: flex;
@@ -59,7 +62,7 @@ body, html {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 .user-info {
@@ -67,7 +70,7 @@ body, html {
   align-items: center;
 }
 .notice-content {
-  background-color: #f0f0f0;
+  /* background-color: #f0f0f0; */
   padding: 10px;
   border-radius: 5px;
   color: #333;
@@ -82,9 +85,10 @@ body, html {
 
 .user-avatar {
   margin-right: 15px;
-  border-radius: 50%;
-  border: 2px solid #9c27b0;
+  border-radius: 60%;
+  /* border: 2px solid #9c27b0; */
   padding: 5px;
+  
 }
 
 .dashboard {

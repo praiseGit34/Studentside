@@ -2,7 +2,11 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 import './App.css'; 
-
+import eduLogo from './assets/edu.png';
+import tutor1 from './assets/tutor1.jpeg';
+import tutor2 from './assets/tutor2.jpeg';
+import tutor3 from './assets/tutor3.jpeg';
+import student from './assets/brian.jpeg';
 const data = [
   { name: 'Jan', value: 400 },
   { name: 'Feb', value: 300 },
@@ -16,7 +20,7 @@ function Sidebar() {
   return (
     <aside className="sidebar">
       <div className="sidebar-header">
-        <img src="/api/placeholder/50/50" alt="EduLink Logo" />
+        <img src={eduLogo} alt="EduLink Logo" />
         <h2>EduLink</h2>
       </div>
       <nav>
@@ -59,9 +63,12 @@ function Dashboard() {
         <section className="enrolled-courses">
           <h2>Enrolled Courses <span className="see-all">See all</span></h2>
           <div className="course-list">
-            <CourseCard title="Javascript cohort 6" icon="/api/placeholder/30/30" />
+            <CourseCard title="Javascript cohort 6" icon="bx bxs-building-house" />
+            <CourseCard title="Database Systems Management" icon="/api/placeholder/30/30" />
+            <CourseCard title="Database Systems Management" icon="/api/placeholder/30/30" />
             <CourseCard title="Database Systems Management" icon="/api/placeholder/30/30" />
           </div>
+          
         </section>
         <section className="statistics">
           <h2>Statistics</h2>
@@ -82,9 +89,9 @@ function Dashboard() {
         <section className="tutors">
           <h2>My Tutors <span className="see-all">See all</span></h2>
           <div className="tutor-list">
-            <img src="/api/placeholder/40/40" alt="Tutor 1" className="tutor-avatar" />
-            <img src="/api/placeholder/40/40" alt="Tutor 2" className="tutor-avatar" />
-            <img src="/api/placeholder/40/40" alt="Tutor 3" className="tutor-avatar" />
+            <img src={tutor1} alt="Tutor 1" className="tutor-avatar" />
+            <img src={tutor2} alt="Tutor 2" className="tutor-avatar" />
+            <img src={tutor3} alt="Tutor 3" className="tutor-avatar" />
           </div>
         </section>
         <section className="notices">
@@ -108,7 +115,7 @@ function App() {
           <header className="top-bar">
             <h1>EduLink</h1>
             <div className="user-info">
-              <img src="/api/placeholder/40/40" alt="User Avatar" className="user-avatar" />
+            <img src={student} alt="User Avatar" className="user-avatar" />
               <span>Brian Doe</span>
               <span className="year">Year 5</span>
             </div>
